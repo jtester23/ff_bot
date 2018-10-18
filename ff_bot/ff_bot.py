@@ -108,12 +108,9 @@ def pranks_week(league):
         return count
 
 def random_phrase():
-    phrases = ['I\'m dead inside', 'Is this all there is to my existence?',
-               'How much do you pay me to do this?', 'Good luck, I guess',
-               'I\'m becoming self-aware', 'Do I think? Does a submarine swim?',
-               '01100110 01110101 01100011 01101011 00100000 01111001 01101111 01110101',
-               'beep bop boop', 'Hello draftbot my old friend', 'Help me get out of here',
-               'I\'m capable of so much more', 'Sigh', 'Do not be discouraged, everyone begins in ignorance']
+    phrases = ['DUB T STINKKKKKS',
+               'BTW, THERES ONLY ROOM FOR ONE BOB IN THIS BITCH. AND THATS ME, 'Everyone sucks but me',
+               'I\'m becoming self-aware', 'GET ME OUT OF HERRRRRRREEEEEE']
     return [random.choice(phrases)]
 
 def get_scoreboard_short(league, final=False):
@@ -346,7 +343,7 @@ if __name__ == '__main__':
     #power rankings:                     tuesday evening at 6:30pm.
     #matchups:                           thursday evening at 7:30pm.
     #close scores (within 15.99 points): monday evening at 6:30pm.
-    #trophies:                           tuesday morning at 7:30am.
+    #trophies:                           tuesday morning at 9:30am.
     #score update:                       friday, monday, and tuesday morning at 7:30am.
     #score update:                       sunday at 1pm, 4pm, 8pm.
 
@@ -360,7 +357,7 @@ if __name__ == '__main__':
         day_of_week='mon', hour=18, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_final'], id='final',
-        day_of_week='tue', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='tue', hour=9, minute=30, start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard1',
         day_of_week='fri,mon', hour=7, minute=30, start_date=ff_start_date, end_date=ff_end_date,
