@@ -110,7 +110,7 @@ def pranks_week(league):
 def random_phrase():
     phrases = ['DUB T STINKKKKKS',
                'BTW, THERES ONLY ROOM FOR ONE BOB IN THIS BITCH. AND THATS ME, 'Everyone sucks but me',
-               'I\'m becoming self-aware', 'GET ME OUT OF HERRRRRRREEEEEE']
+               'GET ME OUT OF HERRRRRRREEEEEE']
     return [random.choice(phrases)]
 
 def get_scoreboard_short(league, final=False):
